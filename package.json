@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14"
+  },
+  "name": "trades-job-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThePeopleThatBreathe/Trades-Job-Board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ThePeopleThatBreathe/Trades-Job-Board/issues"
+  },
+  "homepage": "https://github.com/ThePeopleThatBreathe/Trades-Job-Board#readme"
+}
