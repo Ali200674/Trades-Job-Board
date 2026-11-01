@@ -3,3 +3,7 @@
     --light-accent: #BBD416;
     --dark-accent: #006225;
 }
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  flex: 0 1 500px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, auto);
+  grid-template-areas:
+    "job-title"
+    "company-name"
+    "trade-area"
+    "location"
+    "working-hours"
+    "post-date"
+    "expiration-date"
+    "application-url"
+    "submit-button";
+  padding: 15px;
+  border: medium solid var(--gator-green);
+  border-radius: 15px;
+}
+
+/* All div elements ending with a "group" in the id */
+div[id$="group"] {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#job-title-group {
+  grid-area: job-title;
+}
+
+#company-name-group {
+  grid-area: company-name;
+}
+
+#trade-area-group {
+  grid-area: trade-area;
+}
+
+#location-group {
+  grid-area: location;
+}
+
+#working-hours-group {
+  grid-area: working-hours;
+}
+
+#post-date-group {
+  grid-area: post-date;
+}
+
+#expiration-date-group {
+  grid-area: expiration-date;
+}
+
+#application-url-group {
+  grid-area: application-url;
+}
+
+#submit-button-group {
+  grid-area: submit-button;
+  flex-direction: row;
+  justify-content: center;
+}
+
+input, select {
+  padding: 5px;
+  outline: thin solid;
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus, select:focus {
+  outline: medium solid var(--gator-green);
+}
+
+input[type="radio"] {
+  appearance: none;
+  outline-offset: 3px;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--gator-green);
+}
+
+button {
+  padding: 10px 20px;
+  color: white;
+  background-color: var(--gator-green);
+  border: none;
+  border-radius: 5px;
+}

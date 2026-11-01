@@ -7,6 +7,9 @@ const app = express();
 // Define a port number for our server to listen on
 const PORT = 3004;
 
+// Create an array for created jobs
+const jobs = [];
+
 // Enable static file serving
 app.use(express.static("public"));
 
@@ -20,6 +23,23 @@ app.use(express.urlencoded({ extended: true }));
 // Define a default route ("/")
 app.get("/", (req, res) => {
   res.render("home");
+});
+
+// Define a route to add a job ("/")
+app.get("/add-job", (req, res) => {
+  res.render("add-job");
+});
+
+// Define a route to submit form data and show confirmation page
+app.post("/submit-job", (req, res) => {
+  const job = req.body;
+
+  job["timestamp"] = new Date();
+  console.log(job);
+  jobs.push(job);
+  console.log(jobs)
+
+  res.render("confirm", {job});
 });
 
 // Start the server on the designated port
