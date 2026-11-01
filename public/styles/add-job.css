@@ -95,4 +95,10 @@ button {
   background-color: var(--gator-green);
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.err {
+  color: red;
+  display: none;
 }

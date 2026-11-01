@@ -10,10 +10,11 @@
   <script src = "/scripts/script.js" defer></script>
 </head>
 <body>
-  <form action="#" method="post" id = "form">
+  <form action="/submit-job" method="post" id = "form">
     <div id="job-title-group">
       <label for="job-title">Job Title</label>
       <input type="text" id="job-title" name="job-title">
+      <span id = "err-job-title" class = "err">Job title cannot be empty</span>
     </div>
 
     <div id="company-name-group">
