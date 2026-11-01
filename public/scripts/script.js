@@ -74,10 +74,10 @@ document.getElementById("form").onsubmit = () => {
     if (applicationUrl.value.trim() !== "") {
 
         // Loops through array and if the value starts with one of the values in the array, return true;
-        const isValid = validUrlProtocol.some((protocol) => applicationUrl.value.startsWith(protocol));
+        const isUrlvalid = validUrlProtocol.some((protocol) => applicationUrl.value.startsWith(protocol));
 
         // If the url does not start with what is in the array
-        if (!isValid) {
+        if (!isUrlvalid) {
             errApplicationUrl.textContent = "The start of the link has to start with either https:// or http://";
             errApplicationUrl.style.display = "block";
             isFormValid = false;
@@ -93,7 +93,6 @@ document.getElementById("form").onsubmit = () => {
 
     // Used to check if a radio button is selected
     let workingHourButtonsCount = workingHours.length;
-
     workingHours.forEach((option) => {
 
         // If a button is selected, decrement the count by one
