@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  background-color: var(--gator-green);
+  border-radius: 5px;
+}
