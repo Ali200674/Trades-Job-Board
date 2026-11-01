@@ -22,6 +22,11 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+// Define a route to add a job ("/")
+app.get("/add-job", (req, res) => {
+  res.render("add-job");
+});
+
 // Start the server on the designated port
 app.listen(PORT, () => {
   console.log(`Server is running at 
