@@ -7,5 +7,18 @@
 </head>
 <body>
   <h1>Job has been added</h1>
+
+  <p>Job title: <%= job["job-title"] %></p>
+  <p>Company name: <%= job["company-name"] %></p>
+  <p>Trade area: <%= job["trade-area"] %></p>
+  <p>Location: <%= job["location"] %></p>
+  <p>Working hours: <%= job["working-hours"] %></p>
+  <p>Post date: <%= job["post-date"] %></p>
+  <p>Expiration date: <%= job["expiration-date"] %></p>
+  <p>Application URL: <%= job["application-url"] %></p>
+  <p>Timestamp: <%= job["timestamp"] %></p>
+
+  <button><a href="/">Return to Home</a></button>
+  <button><a href="/add-job">Add a New Job</a></button>
 </body>
 </html>

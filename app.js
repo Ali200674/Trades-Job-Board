@@ -37,9 +37,10 @@ app.post("/submit-job", (req, res) => {
   job["timestamp"] = new Date();
   console.log(job);
   jobs.push(job);
+  console.log(jobs)
 
   res.render("confirm", {job});
-})
+});
 
 // Start the server on the designated port
 app.listen(PORT, () => {
