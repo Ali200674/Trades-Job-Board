@@ -27,6 +27,10 @@ app.get("/add-job", (req, res) => {
   res.render("add-job");
 });
 
+app.post("/submit-job", (req, res) => {
+  res.render("confirm")
+})
+
 // Start the server on the designated port
 app.listen(PORT, () => {
   console.log(`Server is running at 
