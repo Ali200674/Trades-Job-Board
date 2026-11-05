@@ -30,6 +30,10 @@ app.get("/add-job", (req, res) => {
   res.render("add-job");
 });
 
+app.get("/jobs", (req, res) => {
+  res.render("jobs", { jobs });
+});
+
 // Define a route to submit form data and show confirmation page
 app.post("/submit-job", (req, res) => {
   const job = req.body;
